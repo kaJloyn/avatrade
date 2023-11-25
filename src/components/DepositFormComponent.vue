@@ -88,7 +88,7 @@ export default Vue.extend ({
   },
 
   methods: {
-    validateCardNumber ():void {
+    validateCardNumber (): void {
       if(!this.cardNumber) {
         this.cardNumberError = 'Card number is required'
       } else {
@@ -96,7 +96,7 @@ export default Vue.extend ({
       }
     },
 
-    validateCvv ():void {
+    validateCvv (): void {
       if(!this.cvv) {
         this.cvvError = 'CVV is required'
       } else {
@@ -104,7 +104,7 @@ export default Vue.extend ({
       }
     },
 
-    validateExpiryDate () {
+    validateExpiryDate (): void {
       if (!this.expiryDate) {
         this.expiryDateError = 'Expiry Date is required'
       } else {
@@ -112,7 +112,7 @@ export default Vue.extend ({
       }
     },
 
-    deposit ():void {
+    deposit (): void {
       console.log('Card Number', this.cardNumber)
       console.log('CVV', this.cvv)
       console.log('Expiry Date', this.expiryDate)
