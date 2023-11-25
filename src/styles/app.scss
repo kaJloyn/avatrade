@@ -1,0 +1,35 @@
+@import '~vuetify/src/styles/styles.sass';
+.primary-color {
+  color: var(--v-primary-base);
+}
+
+
+.v-input__prepend-inner {
+  margin-top: 16px !important;
+  margin-right: 10px !important;
+}
+
+.v-input__icon--prepend-inner {
+  .v-icon {
+    color: var(--v-primary-base) !important;
+  }
+}
+
+.v-btn {
+  text-transform: none !important;
+}
+
+.theme--light.v-btn.v-btn--disabled.v-btn--has-bg  {
+  background-color: var(--v-primary-lighten3) !important;
+  .v-btn__content {
+    color: var(--v-white-base);
+  }
+}
+
+.fat-border.v-divider {
+  border-width: 1px !important;
+}
+
+.text-small {
+  font-size: 12px;
+}
